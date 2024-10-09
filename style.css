@@ -1,0 +1,9 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    background-color: #FCF3E4;
+}
