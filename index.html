@@ -1,16 +1,137 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keramos - Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
 
-<header>
-    
-</header>
+    <header id="show_bg_2">
+        <div class="container-fluid bg-white">
+            <nav class="navbar">
+                <div class="logo"><img src="img/logo.svg" alt=""></div>
+                <div class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Catalogo</a></li>
+                    <li><a href="#">La nostra azienda</a></li>
+                    <li><a href="#">Contatti</a></li>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container d-flex justify-content-center align-items-center vh-100">
+            <div class="hero row">
+                <div class="col-7">
+                    <h1 class="mb-3">Ceramiche Artigianali di Palermo, tra Tradizione e Innovazione</h1>
+                    <p class="mb-3">Scopri l'arte delle ceramiche artigianali di Palermo, dove la tradizione siciliana
+                        incontra il design moderno. Ogni pezzo è realizzato a mano dai nostri maestri artigiani, che
+                        con cura e passione trasformano la materia grezza in opere uniche, portando nella tua casa il
+                        fascino senza tempo della Sicilia.</p>
+                    <button class="button mt-2">Scopri la nostra collezione</button>
+                </div>
+               
+            </div>
+        </div>
+    </header>
+
+    <section class="our-products container d-flex align-items-center">
+        <div class="col-4">
+            <h2 class="mb-5">I nostri prodotti</h2>
+            <p class="mb-5">Scopri una selezione delle nostre ceramiche più rappresentative, dove la tradizione
+                artigianale si unisce a un design raffinato. Dai vasi decorativi alle stoviglie, ogni pezzo è realizzato
+                a mano con cura, utilizzando tecniche secolari e materiali di altissima qualità. Perfetti per dare un
+                tocco di eleganza a qualsiasi ambiente.</p>
+            <button class="button">Guardali tutti</button>
+        </div>
+
+        <div class="offset-1 col-7">
+    <div id="carouselExampleControls" class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <div class="img-wrapper"><img src="img/4.png" class="d-block " alt="..."> </div>
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="img/5.png" class="d-block " alt="..."> </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="img/7.png" class="d-block" alt="..."> </div>
+                </div>
+            </div>
+         
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+</section>
+
+
+<section class="passione container">
+    <div class="row">
+        <div class="col-6">
+            <img class="img-fluid" src="img/11.png" alt="">
+        </div>
+        <div class="col-5 offset-1">
+            <h2 class="mb-5">Passione e creatività dal 1956</h2>
+            <p>Siamo un'azienda a conduzione familiare con radici profonde nella tradizione artigianale siciliana. Da generazioni, trasformiamo la materia grezza in opere d'arte uniche, celebrando l'arte della ceramica con passione e dedizione. Ogni nostro pezzo racconta una storia, unendo sapienza antica e design contemporaneo per offrire prodotti che rispettano la tradizione, ma parlano anche al presente. La nostra missione è portare l'eleganza e il fascino delle ceramiche siciliane nelle case di tutto il mondo.</p>
+            </div>
+        <div class="box-green d-flex col-6 offset-4 justify-content-around align-items-center">
+            <div>
+            <h2>+68</h2>
+            <p>di apertura</p>
+            </div>
+            <div class="vl"></div>
+            <div>
+                <h2>+20000</h2>
+                <p>prodotti realizzati</p>
+                </div>
+                <div class="vl"></div>
+                <div>
+                    <h2>+500</h2>
+                    <p>clienti soddisfatti</p>
+                    </div>
+
+        </div>
+    </div>
+
+
+
+</section>
+
+
+
+<section class="quality">
+
+
+
+
+</section>
 
 
 
@@ -25,8 +146,11 @@
 
 
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 
-
-    
+            <script src="index.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,180 @@
 * {
     margin: 0px;
     box-sizing: border-box;
+    font-family: "Playfair Display";
+}
+
+.container-fluid {
+    padding: 0px 30px;
 }
 
 header {
     height: 100vh;
-    background-color: #FCF3E4;
+}
+
+
+nav {
+    padding: 20px 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+li {
+    display: inline;
+    padding-left: 30px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    text-transform:capitalize;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.logo {
+    width: 10%;
+}
+
+
+.hero {
+    display: flex;
+}
+
+.img-1 {
+    border-radius: 0px 100px 0px 0px;
+    margin-top: 12%;;
+}
+
+
+img .img-1 .img-2 {
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4.3em;
+    font-weight: 700;
+}
+
+.hero p, .hero h1 {
+    color: white;
+}
+
+p {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "Afacad Flux";
+}
+
+.button {
+    background-color: #013C5A;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Afacad Flux";
+    letter-spacing: 2px;
+
+}
+
+header .button {
+    background-color: #F4A258;
+}
+
+.our-products {
+    padding: 300px 0px ;
+}
+
+h2 {
+ font-size: 50px;
+ font-weight: 700;
+}
+
+
+.carousel-inner {
+    padding: 1em;
+  }
+  .card {
+    margin: 0 0.5em;
+   
+    border: none;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #718C69;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+  }
+  .card .img-wrapper {
+      max-width: 100%;
+      height: 600px;
+      width: 550px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+  }
+  .card img {
+      max-height: 100%;
+  }
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+  }
+
+ 
+
+  #show_bg_2 {
+    background-image:
+    linear-gradient(90deg, rgba(0,0,0,0.8828125) 41%, rgba(0,0,0,0) 100%),
+    url('img/3.png');
+    background-size: cover;
+}
+
+.passione img {
+    border-radius: 166px 0px 0px 0px;;
+}
+
+.passione {
+    margin-bottom: 200px;
+}
+
+.box-green {
+    background-color: #718C69;
+    padding: 40px 0px;
+    position: relative;
+    bottom: 90px;
+    color: white;
+    text-align: center;
+}
+
+.vl {
+    border-left: 2px solid white;
+  height: 100%;
+  
+  ;
 }
