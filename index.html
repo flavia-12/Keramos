@@ -14,6 +14,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -21,87 +23,151 @@
 <body>
 
     <header id="show_bg_2">
-        <div class="container-fluid bg-white">
-            <nav class="navbar">
-                <div class="logo"><img src="img/logo.svg" alt=""></div>
-                <div class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Catalogo</a></li>
-                    <li><a href="#">La nostra azienda</a></li>
-                    <li><a href="#">Contatti</a></li>
+        <nav class="navbar navbar-expand-lg bg-white" aria-label="Offcanvas navbar large">
+            <div class="container-fluid align-items-center">
+              <div class="col-2 d-flex justify-content-start">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <span class="navbar-toggler-icon btn-close-black"></span>
+              </button>
+        
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                  <div class="container">
+                    <div class="row align-items-center">
+        
+                      <div class="col-12 d-flex justify-content-end">
+                        <button type="button" class="btn-close justify-content-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex flex-direction-column navbar-mobile">
+                        <ul>
+                          <li class="nav-item"><a  href="index.html">Home</a></li>
+                          <li class="nav-item"><a  href="chisono.html">Chi sono</a></li>
+                          <li class="nav-item"><a  href="portfolio.html">Portfolio</a></li>
+                          <li class="nav-item"><a  href="contatti.html">Contatti</a></li>
+                        </ul>
+                      </div>
+        
+                    </div>
+                  </div>
                 </div>
-            </nav>
-        </div>
+        
+        
+                <div class="offcanvas-body justify-content-end">
+                  <div class="col-md-10 col-lg-9">
+                    <ul class="navbar-nav d-flex justify-content-end">
+                      <li class="nav-item d-none d-lg-block"><a href="index.html">Home</a></li>
+                      <li class="nav-item d-none d-lg-block"><a href="chisono.html">Chi sono</a></li>
+                      <li class="nav-item d-none d-lg-block"><a href="portfolio.html">Portfolio</a></li>
+                      <li class="nav-item d-none d-lg-block"><a href="contatti.html">Contatti</a></li>
+                  </ul></div>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
 
-        <div class="container d-flex justify-content-center align-items-center vh-100">
-            <div class="hero row">
-                <div class="col-7">
-                    <h1 class="mb-3">Ceramiche Artigianali di Palermo, tra Tradizione e Innovazione</h1>
-                    <p class="mb-3">Scopri l'arte delle ceramiche artigianali di Palermo, dove la tradizione siciliana
+     
+
+        <div class="container d-flex justify-content-center align-items-center vh-100 fade-left">
+            <div class="hero row justify-content-center text-center justify-content-sm-start text-sm-start">
+                <div class="col-sm-10 col-lg-7 d-flex flex-column align-items-center align-items-md-start">
+                    <h1 class="mb-3"><em>Keramos</em>, Ceramiche Artigianali di Palermo.</h1>
+                    <p class="mb-5">Scopri l'arte delle ceramiche artigianali di Palermo, dove la tradizione siciliana
                         incontra il design moderno. Ogni pezzo è realizzato a mano dai nostri maestri artigiani, che
                         con cura e passione trasformano la materia grezza in opere uniche, portando nella tua casa il
                         fascino senza tempo della Sicilia.</p>
-                    <button class="button mt-2">Scopri la nostra collezione</button>
+                    <a href="#" class="button">Scopri la nostra collezione</a>
                 </div>
                
             </div>
         </div>
     </header>
 
-    <section class="our-products container d-flex align-items-center">
-        <div class="col-4">
+    <section class="our-products">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+        <div class="col-md-12 col-lg-4 fade-left">
             <h2 class="mb-5">I nostri prodotti</h2>
             <p class="mb-5">Scopri una selezione delle nostre ceramiche più rappresentative, dove la tradizione
                 artigianale si unisce a un design raffinato. Dai vasi decorativi alle stoviglie, ogni pezzo è realizzato
                 a mano con cura, utilizzando tecniche secolari e materiali di altissima qualità. Perfetti per dare un
                 tocco di eleganza a qualsiasi ambiente.</p>
-            <button class="button">Guardali tutti</button>
+                <a href="#" class="button d-none d-lg-block">Guardali tutti</a>
         </div>
 
-        <div class="offset-1 col-7">
-    <div id="carouselExampleControls" class="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card">
-                    <div class="img-wrapper"><img src="img/4.png" class="d-block " alt="..."> </div>
-                    
+        <div class="offset-lg-1 col-lg-7 fade-right">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <div class="img-wrapper"><img src="img/5.png" class="d-block " alt="..."> </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/5.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/4.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/7.png" class="d-block w-100" alt="...">
+                  </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <div class="img-wrapper"><img src="img/7.png" class="d-block" alt="..."> </div>
-                </div>
-            </div>
-         
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+</div>
+<div class="d-lg-none d-block text-center mt">
+    <a href="#" class="button">Guardali tutti</a>
+</div>
+
+</div> 
+
+
 </div>
 </section>
 
 
 <section class="passione container">
-    <div class="row">
-        <div class="col-6">
+    <div class="row d-flex">
+        <div class="col-md-12 mb-md-5 col-lg-6 fade-left">
             <img class="img-fluid" src="img/11.png" alt="">
         </div>
-        <div class="col-5 offset-1">
-            <h2 class="mb-5">Passione e creatività dal 1956</h2>
-            <p>Siamo un'azienda a conduzione familiare con radici profonde nella tradizione artigianale siciliana. Da generazioni, trasformiamo la materia grezza in opere d'arte uniche, celebrando l'arte della ceramica con passione e dedizione. Ogni nostro pezzo racconta una storia, unendo sapienza antica e design contemporaneo per offrire prodotti che rispettano la tradizione, ma parlano anche al presente. La nostra missione è portare l'eleganza e il fascino delle ceramiche siciliane nelle case di tutto il mondo.</p>
+        <div class="col-md-12 col-lg-5 offset-lg-1 fade-left">
+            <h2 class="mb-3 reveal">Passione e creatività dal 1956</h2>
+            <p class="mb-5">Siamo un'azienda a conduzione familiare con radici profonde nella tradizione artigianale siciliana. Da generazioni, trasformiamo la materia grezza in opere d'arte uniche, celebrando l'arte della ceramica con passione e dedizione. Ogni nostro pezzo racconta una storia, unendo sapienza antica e design contemporaneo per offrire prodotti che rispettano la tradizione, ma parlano anche al presente. La nostra missione è portare l'eleganza e il fascino delle ceramiche siciliane nelle case di tutto il mondo.</p>
+          <a class="button d-none d-lg-block" href="#" >Scopri la nostra storia</a>
+        </div>
+    </div>
+        <div class="row d-none d-lg-block  ">
+            <div class="box-green d-flex shadow fade-right col-lg-6 offset-4 justify-content-around align-items-center">
+                <div>
+            <h2>+68</h2>
+            <p>di apertura</p>
             </div>
-        <div class="box-green d-flex col-6 offset-4 justify-content-around align-items-center">
+            <div class="vl"></div>
+            <div>
+                <h2>+20000</h2>
+                <p>prodotti realizzati</p>
+                </div>
+                <div class="vl"></div>
+                <div>
+                    <h2>+500</h2>
+                    <p>clienti soddisfatti</p>
+                    </div></div>
+        </div>
+        <div class="row d-lg-none justify-content-center">
+        <div class="box-green2 d-flex col-11 justify-content-around align-items-center shadow fade-right">
             <div>
             <h2>+68</h2>
             <p>di apertura</p>
@@ -116,24 +182,181 @@
                     <h2>+500</h2>
                     <p>clienti soddisfatti</p>
                     </div>
+                </div>
+        </div>
+
+        <div class="d-lg-none d-block text-center mt">
+            <a href="#" class="button">scopri la nostra storia</a>
+        </div>
+
+    
+
+
+
+</section>
+
+
+
+<section class="quality d-flex flex-column justify-content-lg-center fade-up active">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-lg-6 flex-column">
+                <div class="mb-5 d-flex align-items-center fade-left">
+                    <img class="mb-3" src="img/quality.svg" alt="">
+                    <div class="ms-5">
+                    <h3>qualità</h3>
+                    <p>Ogni pezzo è realizzato con cura e precisione, utilizzando materiali di prima scelta per garantire durabilità e bellezza nel tempo.</p></div>
+                </div>
+                <div class="mb-5 d-flex align-items-center fade-left">
+                    <img class="mb-3" src="img/ceramics.svg" alt="">
+                    <div class="ms-5">
+                    <h3>tradizione</h3>
+                    <p>Le nostre ceramiche riflettono la tradizione secolare siciliana, tramandata di generazione in generazione con rispetto per l'arte e la cultura locale</p></div>
+                </div>
+                <div class=" d-flex p fade-left">
+                    <img class="mb-3" src="img/passion.svg" alt="">
+                    <div class="ms-5">
+                    <h3>passione</h3>
+                    <p>Uniamo tecniche antiche con un design moderno, creando collezioni uniche che si adattano alle esigenze e ai gusti contemporanei.</p></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="servizi">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 text-center fade-up"><h2>I nostri servizi</h2>
+        </div>
+    </div>
+        <div class="row d-flex align-items-center fade-left justify-content-center">
+    <div class="col-md-6">
+      <h3>Personalizzazione ceramiche</h3>
+      <p class="mb-5">Offriamo un servizio di personalizzazione che ti permette di creare ceramiche uniche, su misura per i tuoi gusti e le tue esigenze. Che si tratti di un colore specifico, un disegno particolare o un pezzo interamente nuovo, lavoriamo con te per trasformare le tue idee in realtà.</p>
+    </div>
+    <div class="col-10 col-sm-10 col-md-5 offset-md-1">
+        <img class="img-fluid mb-5 shadow" src="img/custom.png" alt="">
+    </div></div>
+  
+
+  <hr class="mt-5 mb-5 fade-up">
+
+  <div class="row d-flex align-items-center fade-right justify-content-center">
+    <div class="col-md-6 order-md-2 offset-md-1">
+      <h3>Realizzazione su misura per eventi</h3>
+      <p>Realizziamo piatti, tazzine, vasi e altri oggetti in ceramica completamente personalizzati, ideali per regali speciali o per arricchire la tua collezione. Che tu abbia in mente un set unico di stoviglie per la tua casa o un design esclusivo per il tuo ristorante, siamo pronti a creare pezzi che rispecchiano il tuo stile e le tue esigenze.</p>
+    </div>
+    <div class="col-10 col-md-5 order-md-1">
+        <img class="img-fluid mt-5 mb-5 shadow" src="img/evento.png" alt="">
+    </div>
+  </div>
+
+  <hr class="mt-5 mb-5 fade-up">
+
+  <div class="row d-flex align-items-center fade-left justify-content-center">
+    <div class="col-md-6">
+      <h3 class="mt-5">Collaborazioni con artisti e designer</h3>
+      <p>Lavoriamo a stretto contatto con designer e artisti per realizzare progetti esclusivi e collezioni limitate. Le nostre collaborazioni sono un mix di creatività e artigianalità, offrendo pezzi che combinano la nostra tradizione ceramica con il design contemporaneo.</p>
+    </div>
+    <div class="col-10 col-sm-10 col-md-5 offset-md-1">
+        <img class="img-fluid mt-5 shadow" src="img/artist.png" alt="">
+    </div></div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  
+</section>
+
+<section class="cta d-flex align-items-center text-center shadow fade-up">
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                <h2 class="mb-5">Vuoi collaborare con noi? 
+                   <br> Scopri come scrivendoci.
+                </h2>
+                <a class="btn button" href="#">Contattaci</a>
+            </div>
 
         </div>
+
     </div>
 
 
-
 </section>
 
-
-
-<section class="quality">
-
-
-
-
-</section>
-
-
+  
+        <footer class="container fade-left ">
+            <div class="row d-flex flex-column flex-md-row justify-content-md-between align-items-start">
+               <hr class="mb-5">
+          <div class="col mb-3 logo">
+            <a href="/" class="">
+              <img src="img/logo.svg" alt="">
+            </a>
+          </div>
+      
+          <div class="col mb-3 offset-lg-1">
+            <h5>Azienda</h5>
+            <p>Keramos <br>
+                Via degli Artigiani, 12 <br>
+                90100 Palermo (PA) <br>
+                Italia <br>
+                <br>
+                Telefono: +39 091 123 4567 <br>
+                Email: info@keramos.it <br>
+                P. IVA: 01234567890</p>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Link utili</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#">Catalogo</a></li>
+              <li class="nav-item"><a href="#">La Nostra Azienda</a></li>
+              <li class="nav-item"><a href="#">Contatti</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Social Media</h5>
+            <p>Seguici su:</p>
+            <div>
+                <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#013C5A" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg></a>
+                  <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#013C5A" class="bi bi-instagram ms-3" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg></a>
+            </div>
+               
+              
+          </div>
+          <div class="row flex-column flex-md-row justify-content-center justify-content-md-between align-items-start mt-5">
+            <div class="col">
+                <p class="text-body-secondary">© 2024 Keramos. Tutti i diritti riservati.</p>
+            </div>
+            <div class="col">
+                <ul class="privacy text-md-end">
+                    <li><a class="text-body-secondary" href="#">Privacy</a></li>
+                    <li class="ms-md-3"><a class="text-body-secondary" href="#">Termini e condizioni</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        </footer>
+      
 
 
 

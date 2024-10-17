@@ -4,9 +4,23 @@
     font-family: "Playfair Display";
 }
 
-.container-fluid {
-    padding: 0px 30px;
+body {
+    overflow-x:hidden;
 }
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Afacad Flux";
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 header {
     height: 100vh;
@@ -22,6 +36,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    font-family: "Playfair Display";
 
 }
 
@@ -39,8 +54,8 @@ li a {
 
 }
 
-.logo {
-    width: 10%;
+.logo img {
+    width: 50%;
 }
 
 
@@ -74,22 +89,39 @@ p {
 }
 
 .button {
+    display: flex;
     background-color: #013C5A;
     color: white;
     padding: 15px 30px;
     border: none;
     border-radius: 10px;
-    text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
     font-family: "Afacad Flux";
     letter-spacing: 2px;
+    color: white;
+    transition: background-color 0.5s linear, color 0.5s linear;
+    width: fit-content;
+}
 
+.button:hover {
+    text-decoration: none;
+    background-color: #F4A258;
+    
 }
 
 header .button {
     background-color: #F4A258;
+    transition: background-color 0.5s linear, color 0.5s linear;
+    
 }
+
+header .button:hover {
+    background-color:#718C69;
+     color: white;
+ }
+
+ 
 
 .our-products {
     padding: 300px 0px ;
@@ -101,14 +133,7 @@ h2 {
 }
 
 
-.carousel-inner {
-    padding: 1em;
-  }
-  .card {
-    margin: 0 0.5em;
    
-    border: none;
-  }
   .carousel-control-prev,
   .carousel-control-next {
     background-color: #718C69;
@@ -116,35 +141,8 @@ h2 {
     height: 6vh;
     border-radius: 50%;
     top: 50%;
-    transform: translateY(-50%);
-  }
-  @media (min-width: 768px) {
-    .carousel-item {
-      margin-right: 0;
-      flex: 0 0 33.333333%;
-      display: block;
-    }
-    .carousel-inner {
-      display: flex;
-    }
-  }
-  .card .img-wrapper {
-      max-width: 100%;
-      height: 600px;
-      width: 550px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-  }
-  .card img {
-      max-height: 100%;
-  }
-  @media (max-width: 767px) {
-    .card .img-wrapper {
-      height: 17em;
-    }
-  }
+    transform: translateY(-50%);}
+
 
  
 
@@ -152,11 +150,20 @@ h2 {
     background-image:
     linear-gradient(90deg, rgba(0,0,0,0.8828125) 41%, rgba(0,0,0,0) 100%),
     url('img/3.png');
+    object-fit: cover;
     background-size: cover;
 }
 
 .passione img {
-    border-radius: 166px 0px 0px 0px;;
+    border-radius: 166px 0px 0px 0px;
+    
+
+}
+
+.passione .img-fluid {
+    height: 650px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .passione {
@@ -172,9 +179,517 @@ h2 {
     text-align: center;
 }
 
+
+.box-green2 {
+    background-color: #718C69;
+    padding: 40px 0px;
+    color: white;
+    text-align: center;
+}
+
 .vl {
     border-left: 2px solid white;
   height: 100%;
-  
-  ;
 }
+
+
+.quality {
+    height: 80vh;
+    background: url(img/piatto.png);
+    background-color: #013C5A;
+    background-size: 80%;
+    background-position: 250%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.quality h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.quality img {
+    width: 100px;
+    text-align: center;
+    fill: #FCF3E4;
+}
+
+.servizi {
+    margin: 300px 0px;
+}
+
+
+.servizi img:hover {
+    width: 300%;
+    -webkit-transition: width 0.5s ease-in-out;
+-moz-transition: width 0.5s ease-in-out;
+-ms-transition: width 0.5s ease-in-out;
+-o-transition: width 0.5s ease-in-out;
+transition: width 0.5s ease-in-out;
+
+}
+
+.servizi h2 {
+    margin-bottom: 150px;
+}
+
+.servizi h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.servizi img {
+    border-radius: 166px;
+}
+
+.testimonianze {
+    margin-bottom: 200px;
+}
+
+hr {
+    color: #013C5A;
+}
+
+.cta {
+    height: 40vw;
+    width: 60%;
+    background-color: #013C5A;
+    color: white;
+    border-radius: 166px 0px;
+    margin: auto;
+
+}
+
+.cta .button {
+    background-color: #F4A258;
+    transition: color 0.5s linear;
+}
+
+.cta .button:hover {
+    background-color: #FCF3E4;
+    color: #013C5A;
+    
+}
+
+h5 {
+    font: 20px;
+    font-weight: 700;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+
+footer li {
+    padding-left: 0px;
+    display: flex;
+}
+
+footer a {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+
+.privacy li {
+    display: inline;
+}
+
+.privacy ol, ul {
+    padding-left: 0px;
+}
+
+.privacy a {
+    text-transform:none;
+}
+
+.page {
+    color: #F4A258;
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-20px); /* Sposta l'elemento verso sinistra */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-left.active {
+    opacity: 1;
+    transform: translateX(0); /* Riporta l'elemento nella posizione originale */
+  }
+  
+  .fade-right {
+    opacity: 0;
+    transform: translateX(10px); /* Sposta l'elemento verso destra */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-right.active {
+    opacity: 1;
+    transform: translateX(0); /* Riporta l'elemento nella posizione originale */
+  }
+  
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px); /* Sposta l'elemento verso il basso */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-up.active {
+    opacity: 1;
+    transform: translateY(0); /* Riporta l'elemento nella posizione originale */
+  }
+  
+  .fade-down {
+    opacity: 0;
+    transform: translateY(-20px); /* Sposta l'elemento verso l'alto */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-down.active {
+    opacity: 1;
+    transform: translateY(0); /* Riporta l'elemento nella posizione originale */
+  }
+  
+  .navbar-mobile li {
+    display: grid;
+    font-family: 'Dahlia-bold';
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-top: 20px; 
+}
+
+.mt {
+    margin-top: 100px;
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .passione .img-fluid {
+        height: 750px;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+
+    h1 {
+        font-size: 3.5em;
+    }    
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .quality h3 {
+        font-size: 30px;
+    }
+
+    .servizi img {
+        border-radius: 100px;
+    }
+
+    .cta {
+        width: 80%;
+        height: 50vw;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .card .img-wrapper {
+        height: 500px;
+    }
+
+    .box-green {
+        bottom: 90px;
+    }
+
+   .button {
+    padding: 13px 20px;
+   }
+
+}
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+        h1 {
+            font-size: 3.5em;
+        }
+    
+        .passione .img-fluid {
+            height: 600px;
+        }
+    
+        h2 {
+            font-size: 40px;
+        }
+    
+        .quality h3 {
+            font-size: 30px;
+        }
+    
+       
+    
+        .servizi img {
+            border-radius: 100px;
+        }
+    
+        .cta {
+            width: 80%;
+            height: 50vw;
+        }
+    
+        .logo img {
+            width: 70%;
+        }
+    
+        .card .img-wrapper {
+            height: 500px;
+        }
+    
+        .box-green {
+            bottom: 90px;
+        }
+    
+       .button {
+        padding: 13px 20px;
+       }
+
+    .our-products {
+        padding: 200px 0px;
+    }
+
+
+    .quality img {
+        width: 70px;
+    }
+
+    .quality {
+        background-position: 325%;
+    }
+
+    .servizi {
+        margin: 150px 0px;
+
+    }
+
+    .servizi h2 {
+        margin-bottom: 75px;
+   }
+
+   .logo img {
+    width: 150px;
+   }
+
+   footer .logo img {
+    width: 100px;
+   }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .button {
+            font-size: 16px;
+
+        }
+
+        .logo img {
+            width: 120px;
+        }
+
+        .our-products {
+        padding: 100px 0px;
+        }
+
+        .passione .img-fluid {
+            height: 500px;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .quality {
+            padding-top: 30px;
+            background-size: 117%;
+            background-position: 50% 475px;
+        }
+
+        .quality h3 {
+            font-size: 25px;
+        }
+
+        .quality img {
+            width: 70px;
+        }
+
+        .servizi {
+            margin: 150px 0px;
+        }
+
+        .servizi h2 {
+            margin-bottom: 50px;
+        }
+
+        .servizi h3 {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .servizi p {
+            text-align: center;
+        }
+
+        hr {
+            margin: 0.5rem;
+        }
+
+
+        .cta {
+            height: 80vw;
+            width: 90%;
+        }
+
+        footer .logo img {
+            width: 100px;
+           }
+
+        footer a {
+            font-size: 16px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        #show_bg_2 {
+            background-image:  linear-gradient(-10deg, rgba(0, 0, 0, 0.8828125) 41%, rgba(0, 0, 0, 0) 100%), url(img/3.png);
+            
+
+        }
+    }
+
+
+    @media only screen and (max-width: 479px) {
+        #show_bg_2 {
+            background-image:  linear-gradient(-10deg, rgba(0, 0, 0, 0.8828125) 41%, rgba(0, 0, 0, 0) 100%), url(img/3.png);
+            
+
+        }
+
+        .hero {
+            padding-top: 10vh;
+        }
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .button {
+            font-size: 14px;
+
+        }
+
+        .logo img {
+            width: 120px;
+        }
+
+        .our-products {
+        padding: 150px 0px;
+        }
+
+        .passione .img-fluid {
+            height: 400px;
+            margin-bottom: 50px;
+            border-radius: 0px 50px 0px 0px;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+
+        .quality {
+            height: 100vh;
+            padding-top: 30px;
+            background-size: 117%;
+            background-position: 50% 605px;
+        }
+
+        .quality h3 {
+            font-size: 25px;
+        }
+
+        .quality img {
+            width: 70px;
+        }
+
+        .servizi {
+            margin: 150px 0px;
+        }
+
+        .servizi h2 {
+            margin-bottom: 50px;
+        }
+
+        .servizi h3 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .servizi p {
+            text-align: center;
+        }
+
+        .servizi img {
+            border-radius: 50px;
+        }
+
+        hr {
+            margin: 0.5rem;
+        }
+
+
+        .cta {
+            height: 50vh;
+            width: 90%;
+            border-radius: 50px 0px;
+        }
+
+        footer .logo img {
+            width: 100px;
+           }
+
+        footer a {
+            font-size: 14px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    }
