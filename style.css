@@ -65,11 +65,11 @@ li a {
 
 .img-1 {
     border-radius: 0px 100px 0px 0px;
-    margin-top: 12%;;
+    margin-top: 12%;
 }
 
 
-img .img-1 .img-2 {
+.img-1 .img-2 img {
     background-size: cover;
 }
 
@@ -99,7 +99,6 @@ p {
     font-weight: 600;
     font-family: "Afacad Flux";
     letter-spacing: 2px;
-    color: white;
     transition: background-color 0.5s linear, color 0.5s linear;
     width: fit-content;
 }
@@ -149,7 +148,7 @@ h2 {
   #show_bg_2 {
     background-image:
     linear-gradient(90deg, rgba(0,0,0,0.8828125) 41%, rgba(0,0,0,0) 100%),
-    url('img/3.png');
+    url('img/3.jpg');
     object-fit: cover;
     background-size: cover;
 }
@@ -275,7 +274,7 @@ hr {
 }
 
 h5 {
-    font: 20px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -400,6 +399,10 @@ footer a {
 
     .servizi img {
         border-radius: 100px;
+    }
+
+    .quality {
+        height: 85vh;
     }
 
     .cta {
@@ -586,7 +589,7 @@ footer a {
         }
 
         #show_bg_2 {
-            background-image:  linear-gradient(-10deg, rgba(0, 0, 0, 0.8828125) 41%, rgba(0, 0, 0, 0) 100%), url(img/3.png);
+            background-image:  linear-gradient(-10deg, rgba(0, 0, 0, 0.8828125) 41%, rgba(0, 0, 0, 0) 100%), url(img/3.jpg);
             
 
         }
@@ -595,7 +598,7 @@ footer a {
 
     @media only screen and (max-width: 479px) {
         #show_bg_2 {
-            background-image:  linear-gradient(-10deg, rgba(0, 0, 0, 0.8828125) 41%, rgba(0, 0, 0, 0) 100%), url(img/3.png);
+            background-image:  linear-gradient(-10deg, rgba(0, 0, 0, 0.8828125) 41%, rgba(0, 0, 0, 0) 100%), url(img/3.jpg);
             
 
         }
